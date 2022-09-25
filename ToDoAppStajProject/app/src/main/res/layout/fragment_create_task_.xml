@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+
+    tools:context=".View.FragmentCreateTask">
+
+    <androidx.appcompat.widget.Toolbar
+
+        app:titleTextColor="@color/white"
+        app:title="@string/app_name"
+
+        app:navigationIcon="?attr/homeAsUpIndicator"
+        android:id="@+id/toolbarCreateTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="4dp"
+        android:text="Task Title"
+        android:textColor="@color/colorPrimaryDarkV3"
+        android:textSize="16sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/LoginTextInputOuterFieldStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:id="@+id/titleInpLay"
+        app:hintTextColor="@color/colorAccent"
+        app:boxStrokeColor="@color/colorAccent"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/taskTitleEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Task title"
+            android:inputType="textCapWords"
+            android:paddingHorizontal="8dp"
+            android:textSize="18sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="4dp"
+        android:text="What is to be done?"
+        android:textColor="@color/colorPrimaryDarkV3"
+        android:textSize="16sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/LoginTextInputOuterFieldStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:hintTextColor="@color/colorAccent"
+        app:boxStrokeColor="@color/colorAccent"
+        android:layout_marginEnd="16dp"
+        android:id="@+id/taskInpLay"
+        android:layout_marginBottom="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your Task"
+            android:lines="3"
+            android:gravity="start"
+            android:id="@+id/taskEditText"
+            android:paddingHorizontal="8dp"
+            android:textSize="18sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="4dp"
+        android:text="Set reminder date and time"
+        android:textColor="@color/colorPrimaryDarkV3"
+        android:textSize="16sp" />
+
+
+    <RelativeLayout
+        android:layout_width="397dp"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/LoginTextInputOuterFieldStyle"
+            android:id="@+id/layoutTextField"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal"
+            app:boxStrokeColor="@color/colorAccent"
+            app:hintTextColor="@color/colorAccent">
+
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:id="@+id/dateText"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:cursorVisible="false"
+                android:drawablePadding="8dp"
+                android:drawableTint="@color/colorAccent"
+
+                android:focusable="false"
+                android:hint="Set Date"
+                android:paddingHorizontal="8dp"
+                android:textSize="18sp" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonDatePicker"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="35dp"
+
+            android:layout_toEndOf="@+id/layoutTextField"
+
+            android:gravity="end"
+
+            app:backgroundTint="@color/colorPrimaryV3"
+
+            app:cornerRadius="0dp"
+            app:icon="@drawable/date_range_icon" />
+
+
+
+    </RelativeLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:hintTextColor="@color/colorAccent"
+        app:boxStrokeColor="@color/colorAccent"
+        android:visibility="gone"
+        android:id="@+id/timeInptLay"
+        android:layout_marginBottom="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Set Time"
+            android:clickable="true"
+            android:id="@+id/timeEdt"
+            android:cursorVisible="false"
+            android:drawablePadding="8dp"
+            android:drawableEnd="@drawable/access_time_black_24dp"
+            android:drawableTint="@color/colorAccent"
+            android:focusable="false"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textSize="18sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:textColor="@color/white"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:text="Save Task"
+        app:backgroundTint="@color/colorPrimaryV3"
+        app:cornerRadius="25dp" />
+
+
+
+
+</LinearLayout>

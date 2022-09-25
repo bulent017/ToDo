@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginBottom="10dp"
+    android:elevation="20dp"
+
+    android:background="@color/purple_200"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+
+
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="0dp"
+            android:layout_gravity="center"
+            >
+
+        </CheckBox>
+
+
+        <RelativeLayout
+            android:layout_width="314dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="5dp"
+            android:background="@color/white"
+
+
+            android:padding="5dp">
+
+            <!-->  android:background="?android:attr/selectableItemBackground"   <!-->
+            <TextView
+                android:id="@+id/txtShowTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginEnd="5dp"
+
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="#303030"
+                android:textSize="20sp"
+                android:textStyle="bold"
+
+                tools:text="@string/txtShowTitle" />
+
+
+            <TextView
+                android:id="@+id/txtShowTask"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtShowTitle"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="4dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                tools:text="Task Subtitle" />
+
+
+            <TextView
+                android:id="@+id/textDate"
+
+                android:layout_width="43dp"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentEnd="true"
+
+
+                android:layout_marginEnd="38dp"
+
+                android:text="@string/date"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/txtShowDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textDate"
+
+
+                android:layout_alignStart="@+id/textDate"
+
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="0dp"
+                android:gravity="end"
+                android:textColor="@android:color/black"
+                android:visibility="visible"
+                tools:text="22-12-2017" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

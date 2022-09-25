@@ -1,0 +1,22 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <item
+
+        android:id="@+id/checklist"
+        android:icon="@drawable/checklist_icon"
+
+        android:title=""
+        app:showAsAction="ifRoom|withText"/>
+    <item
+
+        android:id="@+id/action_done"
+        android:icon="@drawable/plus_icon_white"
+
+        android:title=""
+        app:showAsAction="ifRoom|withText"/>
+
+
+</menu>

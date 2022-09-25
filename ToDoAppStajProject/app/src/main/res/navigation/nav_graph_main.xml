@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_main"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/fragmentUserProfile"
+        android:name="com.bulentoral.todoappstajproject.View.FragmentUserProfile"
+        android:label="fragment_user_profile"
+        tools:layout="@layout/fragment_user_profile" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.bulentoral.todoappstajproject.View.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_fragmentCreateTask"
+            app:destination="@id/fragmentCreateTask" />
+        <action
+            android:id="@+id/action_homeFragment_to_fragmentUpdateTask2"
+            app:destination="@id/fragmentUpdateTask2" />
+        <action
+            android:id="@+id/action_homeFragment_to_fragmentCompletedTask"
+            app:destination="@id/fragmentCompletedTask" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentCreateTask"
+        android:name="com.bulentoral.todoappstajproject.View.FragmentCreateTask"
+        android:label="fragment_create_task_"
+        tools:layout="@layout/fragment_create_task_" >
+        <action
+            android:id="@+id/action_fragmentCreateTask_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentUpdateTask2"
+        android:name="com.bulentoral.todoappstajproject.View.FragmentUpdateTask"
+        android:label="fragment_update_task"
+        tools:layout="@layout/fragment_update_task" >
+        <action
+            android:id="@+id/action_fragmentUpdateTask2_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <argument
+            android:name="rowDataArray"
+            app:argType="string[]" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentCompletedTask"
+        android:name="com.bulentoral.todoappstajproject.View.FragmentCompletedTask"
+        android:label="fragment_completed_task"
+        tools:layout="@layout/fragment_completed_task" >
+        <action
+            android:id="@+id/action_fragmentCompletedTask_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+</navigation>

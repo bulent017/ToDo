@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "85763532107",
+    "firebase_url": "https://todoapp-fcf32-default-rtdb.firebaseio.com",
+    "project_id": "todoapp-fcf32",
+    "storage_bucket": "todoapp-fcf32.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:85763532107:android:1fbec09c6e6a5d8f59b4ce",
+        "android_client_info": {
+          "package_name": "com.bulentoral.todoappstajproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "85763532107-jo6cvp74u7q4fnqvvhgjdurmbr87u42u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBX5skiTeP09-BNkB773k8-3PCI8UANaYE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "85763532107-jo6cvp74u7q4fnqvvhgjdurmbr87u42u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
