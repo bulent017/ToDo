@@ -8,6 +8,7 @@
  ### Firebase Realtime Database
  ### Firebase Authentication
  ### Android, Kotlin
+ ### View Binding
  
  #### Short non-narrated video of the project
  
